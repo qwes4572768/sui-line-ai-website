@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+Sitemap: https://sui-line-ai-website.onrender.com/sitemap.xml
