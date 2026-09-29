@@ -1,0 +1,111 @@
+/* The same URLs and content adapt to phones, tablets and desktop screens. */
+html { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
+.site-shell main > *, .site-shell article, .site-shell .callout > *,
+.site-shell .hero > *, .site-shell .sample-stage > * { min-width: 0; }
+
+@media screen and (max-width: 800px) {
+  .site-header { gap: 10px; padding: 12px 20px 8px; }
+  .site-header .brand { min-height: 44px; }
+  .site-header > .small-cta { display: inline-flex; align-items: center; min-height: 44px; padding: 8px 14px; }
+  .mobile-nav > summary { min-height: 44px; padding: 8px 0; }
+  .mobile-nav nav { padding-top: 0; padding-bottom: 4px; }
+  .mobile-nav nav a { min-height: 44px; padding: 10px 8px; }
+  .site-footer .footer-grid nav { gap: 0; }
+  .site-footer .footer-grid nav a { display: flex !important; align-items: center; min-height: 44px; line-height: 1.6; }
+  .site-shell .service-card > a, .site-shell .showcase-grid article > a:last-child,
+  .site-shell .link-row > a { display: inline-flex; align-items: center; min-height: 44px; }
+  .site-shell .sample-downloads a { display: flex; align-items: center; justify-content: center; min-height: 48px; }
+}
+
+@media screen and (max-width: 600px) {
+  .site-shell { line-height: 1.75; }
+  .site-shell .wrap { padding-left: 18px; padding-right: 18px; }
+  .site-shell .preview { padding: 7px 12px; font-size: 11px; line-height: 1.5; }
+  .site-shell .preview span { margin-left: 6px; letter-spacing: 0; }
+  .site-header { padding-left: 18px; padding-right: 18px; }
+  .site-header .brand { font-size: 18px; gap: 7px; }
+  .site-header .brand img { width: 40px; height: 40px; }
+  .site-header > .small-cta { font-size: 13px; padding-left: 12px; padding-right: 12px; }
+  .site-shell .hero { padding-top: 24px; padding-bottom: 30px; gap: 22px; }
+  .site-shell .hero h1 { font-size: clamp(25px, 7.1vw, 32px); line-height: 1.5; margin-bottom: 14px; }
+  .site-shell .eyebrow { font-size: 13px; letter-spacing: .04em; margin-bottom: 12px; }
+  .site-shell .hero .lead, .site-shell .page-hero .lead { font-size: 16px; line-height: 1.75; margin-bottom: 20px; }
+  .site-shell .hero .actions { display: grid; grid-template-columns: 1fr; gap: 4px; }
+  .site-shell .hero .actions > a { min-height: 48px; width: 100%; text-align: center; }
+  .site-shell .hero .actions .text-link { display: flex; justify-content: center; align-items: center; }
+  .site-shell .hero-copy .fine { font-size: 12px; line-height: 1.65; margin-top: 10px; }
+  .site-shell .hero-art { max-width: 245px; padding: 5px 12px 20px; }
+  .site-shell .bubble { left: -4px; top: 0; padding: 6px 10px; font-size: 12px; }
+  .site-shell .note { bottom: 3%; padding: 5px 10px; font-size: 11px; }
+  .site-shell .section { padding-top: 34px; padding-bottom: 38px; }
+  .site-shell .section-heading { margin-bottom: 24px; }
+  .site-shell .section-heading h2, .site-shell .callout h2 { font-size: 25px; line-height: 1.5; }
+  .site-shell .service-card { padding: 20px; }
+  .site-shell .service-card h3 { font-size: 21px; margin: 8px 0; }
+  .site-shell .service-card p { margin-bottom: 8px; }
+  .site-shell .steps { grid-template-columns: 1fr; gap: 16px; }
+  .site-shell .steps li { display: grid; grid-template-columns: 34px minmax(0, 1fr); column-gap: 12px; padding-top: 16px; }
+  .site-shell .steps li::before { grid-column: 1; grid-row: 1 / span 2; font-size: 25px; margin: 0; line-height: 1.4; }
+  .site-shell .steps b, .site-shell .steps p { grid-column: 2; }
+  .site-shell .steps p { margin-top: 4px; }
+  .site-shell .showcase-grid article { padding: 16px; }
+  .site-shell .showcase-grid article > a:first-child { padding: 10px; }
+  .site-shell .showcase-grid img { max-height: 380px; }
+  .site-shell .callout { padding: 22px 20px; gap: 20px; }
+  .site-shell .callout > a { width: 100%; min-height: 48px; text-align: center; }
+  .site-shell .plan { padding: 26px 22px; }
+  .site-shell .plan-grid { gap: 30px; }
+  .site-shell .plan h3 { font-size: 23px; }
+  .site-shell .plan .price { font-size: 48px; }
+  .site-shell .plan .trial { right: 16px; font-size: 12px; }
+  .site-shell .plan ul { margin: 16px 0 20px; }
+  .site-shell .plan li { margin: 8px 0; }
+  .site-shell .plan-status { min-height: 50px; }
+  .site-shell .page-hero { padding-top: 22px; padding-bottom: 8px; }
+  .site-shell .page-hero h1, .site-shell .legal-content h1 { font-size: clamp(26px, 7vw, 31px); line-height: 1.5; }
+  .site-shell .reading, .site-shell .legal-content { padding-top: 22px; }
+  .site-shell .reading h2, .site-shell .legal-content h2 { font-size: 23px; margin-top: 30px; }
+  .site-shell .reading p, .site-shell .legal-content p { line-height: 1.8; }
+  .site-shell .example { padding: 18px; }
+  .site-shell .faq-item summary { min-height: 48px; font-size: 17px; line-height: 1.6; padding: 16px 4px; }
+  .site-shell .faq-item > div { padding-bottom: 16px; }
+  .site-shell .sample-stage { padding: 24px 20px; }
+  .site-shell .sample-stage h2 { font-size: 25px; }
+  .site-shell .sample-downloads a { font-size: 14px; }
+  .site-shell .link-row { gap: 4px 16px; }
+  .site-shell .site-footer { padding-top: 30px; padding-bottom: max(20px, env(safe-area-inset-bottom)); }
+  .site-shell .footer-grid { grid-template-columns: 1fr; gap: 20px; }
+  .site-shell .footer-grid nav { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 4px 16px; }
+  .site-shell .footer-grid nav a { font-size: 14px; }
+  .site-shell .footer-bottom { margin-top: 20px; line-height: 1.75; }
+
+  /* Keep table values together as labelled cards; no sideways reading on phones. */
+  .site-shell .table-scroll { overflow: visible; border: 0; border-radius: 0; }
+  .site-shell .responsive-table { display: block; min-width: 0; font-size: 15px; }
+  .site-shell .responsive-table thead { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
+  .site-shell .responsive-table tbody { display: grid; gap: 14px; }
+  .site-shell .responsive-table tbody tr { display: block; border: 1px solid #dae4ee; border-radius: 14px; overflow: hidden; }
+  .site-shell .responsive-table tbody th { display: block; min-width: 0; padding: 13px 16px; background: #edf4fc; color: var(--navy); border: 0; }
+  .site-shell .responsive-table tbody td { display: block; padding: 12px 16px; border: 0; overflow-wrap: anywhere; }
+  .site-shell .responsive-table tbody td + td { border-top: 1px solid #e3eaf0; }
+  .site-shell .responsive-table tbody td::before { content: attr(data-label); display: block; color: var(--navy); font-size: 13px; font-weight: 700; margin-bottom: 3px; }
+
+  .purchase-wrap { padding: 0 18px; }
+  .purchase-card { padding: 22px 18px; }
+  .purchase-card h2 { font-size: 21px; line-height: 1.5; }
+  .purchase-card .purchase-open { min-height: 50px; font-size: 16px; }
+  .purchase-card .profile-link, .purchase-card > a { display: flex; align-items: center; justify-content: center; min-height: 44px; }
+  .purchase-card .command-row button { min-height: 46px; }
+  .purchase-card .command-row input { font-size: 18px; }
+  .purchase-heading p { line-height: 1.7; }
+  .purchase-heading h1 { font-size: 28px; }
+}
+
+@media screen and (min-width: 601px) and (max-width: 950px) {
+  .site-shell .hero { gap: 24px; padding-top: 36px; padding-bottom: 44px; }
+  .site-shell .hero h1 { font-size: 32px; }
+  .site-shell .hero .lead { font-size: 16px; }
+  .site-shell .hero .actions { gap: 12px; }
+  .site-shell .hero .button { min-height: 48px; font-size: 15px; padding: 12px 16px; }
+  .site-shell .hero .text-link { min-height: 44px; display: flex; align-items: center; }
+}
